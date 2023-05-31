@@ -55,7 +55,7 @@ loops <- as_ginteractions(loops)
 GenomeInfoDb::seqlevelsStyle(loops) <- 'ENSEMBL'
 
 ## Alternatively--loops ID'd in the Dekker samples: 
-loops <- subsetByOverlaps(megaK562, dekkerK562, maxgap = 10E5)
+loops <- subsetByOverlaps(megaK562, dekkerK562, maxgap = 10E4)
 loops <- loops[loops$APScoreAvg>10,]
 GenomeInfoDb::seqlevelsStyle(loops) <- 'ENSEMBL'
 loopsAlt <- loops
